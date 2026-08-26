@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  
+  <body style="background-color: rgba(66, 75, 77); margin: 0; overflow: hidden;">
+    <div style="background-image: url('https://images.alphacoders.com/139/1399643.jpg'); background-position: center bottom; background-size: cover; background-repeat: no-repeat; width: 100vw; height: 100vh; animation: jiggle 6s ease-in-out infinite; z-index: 1;">
+      <style>
+        @keyframes jiggle { 
+        0% { transform: scale(1.02) translate(0px, 0px) rotate(0deg); }
+        25% { transform: scale(1.02) translate(-1px, 1px) rotate(-0.2deg); }
+        50% { transform: scale(1.02) translate(1px, -1px) rotate(0.2deg); }
+        75% { transform: scale(1.02) translate(-0.5px, -0.5px) rotate(-0.1deg); }
+        100% { transform: scale(1.02) translate(0px, 0px) rotate(0deg); }
+        }
+      </style> 
+    </div>
+    
+    <div style="position: fixed; top: 0; left: 0; width: 100%; display: flex; background: linear-gradient(to right, rgba(153, 104, 104, 0.795), rgba(64, 59, 92, 0.521), rgba(116, 151, 109, 0.486)); color: #e7f1ec; justify-content: space-between; z-index: 2;">
+      <p style="margin-left: 17px; cursor: pointer;" id="welcomeOpen">
+        humanOS 
+      </p>
+      <p style="margin: 17px">
+        Its gonna be okay
+      </p>
+    
+      <p id="timeElement" style="margin-right: 17px; margin-left: 10px;">
+          Time
+      </p>
+    </div>
+    <img id="heart" src="/heart.png"
+     style="position: absolute; left: 500px; top: 300px; opacity: 0;">
+    <div id="welcome" style="position: relative; z-index: 3; position: absolute; top: 50%; left: 50%; padding: 10px; border: thick double #566d6a; width: fit-content; border-radius: 16px; backdrop-filter: blur(3px); background-color: rgba(37, 34, 34, 0.25); color: #fff;">
+        <div id = "welcomeheader" style="position: absolute; top: -30px; left: 0; width: 100%; cursor: move; display: flex; justify-content: center; margin: 8px;">
+         <img style="width: 120px; height: 60px; display: flex; justify-content: center;" src="/NONUKI.png">
+       <div style="cursor: pointer; width: 16px; height: 16px; display: flex; justify-content: flex-end;" id="welcomeclose">Close</div>
+      </div>
+      <img style="width: 120px; height: 120px; object-fit: cover; border-radius: 50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFApln2A7RTaaGQx9r7Lj9yUG_g-Nt_Lel11hqQDGDuZI5fz__Y-sqArg&s=10" />
+      <h1 style="color:rgb(174, 224, 235); margin: 4px;"> humanOS</h1>
+      <p style="margin: 0px; font-size: 20px; color:#e7f1ec">This <abbr title="Outa Sync?">OS</abbr> is for <abbr title="Not ya, Tanaka. Stop spectating." style="text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: 3px; cursor: help;">ya.</abbr> I like cats not dogs, I like studying and I prefer ice-cream over watermelon.</p>
+    </div>
+    <img id="heartReveal" src="heart.png"
+     style="z-index: 2; position: absolute; width: 70px; left: 1500px; top: 330px; pointer-events: none; clip-path: inset(100% 100% 100% 100%);">
+    <script src="script.js"></script>
+  </body>
+
+</html>    
