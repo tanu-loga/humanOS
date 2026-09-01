@@ -61,28 +61,28 @@ function dragElement(element) {
     document.onmousemove = null;
   }
 }
-const welcome = document.getElementById("welcome");
-const heartReveal = document.getElementById("heartReveal");
 
+const welcome = document.getElementById("welcome");
+const nokireveal = document.getElementById("nokireveal");
 function updateReveal() {
     if (window.getComputedStyle(welcome).display === 'none') {
-        heartReveal.style.clipPath = 'inset(100%)'; 
+        nokireveal.style.clipPath = 'inset(100%)'; 
         return; 
     }
 
     const windowRect = welcome.getBoundingClientRect();
-    const heartRect = heartReveal.getBoundingClientRect();
+    const nokiRect = nokireveal.getBoundingClientRect();
 
-    const left = Math.max(windowRect.left - heartRect.left, 0);
-    const top = Math.max(windowRect.top - heartRect.top, 0);
+    const left = Math.max(windowRect.left - nokiRect.left, 0);
+    const top = Math.max(windowRect.top - nokiRect.top, 0);
 
-    const right = Math.max(heartRect.width - (windowRect.right - heartRect.left), 0);
+    const right = Math.max(nokiRect.width - (windowRect.right - nokiRect.left), 0);
     
 
-    const bottom = Math.max(heartRect.height - (windowRect.bottom - heartRect.top), 0);
+    const bottom = Math.max(nokiRect.height - (windowRect.bottom - nokiRect.top), 0);
 
 
-    heartReveal.style.clipPath = `inset(${top}px ${right}px ${bottom}px ${left}px)`;
+    nokireveal.style.clipPath = `inset(${top}px ${right}px ${bottom}px ${left}px)`;
 }
 
 var welcomeScreen = document.querySelector("#welcome")
