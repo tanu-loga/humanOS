@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-  
+  <head>
+   <link rel="stylesheet" type="text/css" href="main.css"/>
+  </head>
   <body style="background-color: rgba(66, 75, 77); margin: 0; overflow: hidden;">
     <div style="background-image: url('https://images.alphacoders.com/139/1399643.jpg'); background-position: center bottom; background-size: cover; background-repeat: no-repeat; width: 100vw; height: 100vh; animation: jiggle 6s ease-in-out infinite; z-index: 1;">
       <style>
@@ -27,11 +29,11 @@
       </p>
     </div>
     <img id="noki" src="bgnonuki.jpg" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; object-position: center bottom; opacity: 0; z-index: 1;">
-    <div id="welcome" style="z-index: 5; position: absolute; top: 50%; left: 50%; padding: 10px; border: thick double #566d6a; width: fit-content; border-radius: 16px; backdrop-filter: blur(1px); background-color: rgba(37, 34, 34, 0.25); color: #fff;">
-        <div id = "welcomeheader" style="position: absolute; top: -60px; left: 0; width: 100%; cursor: move; display: flex; justify-content: center; margin: 8px;">
-         <img style="width: 120px; height: 60px; display: flex; justify-content: center;" src="NONUKI.png">
+    <div class="window" id="welcome" style="z-index: 5; position: absolute; top: 50%; left: 50%; padding: 10px; border: thick double #566d6a; width: fit-content; border-radius: 16px; backdrop-filter: blur(1px); background-color: rgba(37, 34, 34, 0.25); color: #fff;">
+        <div class="windowheader" id="welcomeheader">
+         <img class="headerimg" src="NONUKI.png">
       </div>
-      <div style="position: absolute; display: flex; align-items: center; justify-content: center; border-radius: 13px; cursor: pointer; width: 16px; height: 16px; right: 15px; margin: 15px; border: 1px solid rgba(39, 40, 41, 0.24); background-color: rgba(190, 201, 214, 0.26); padding: 4px 20px" id="welcomeclose">Close</div>
+      <div class="closebutton" id="welcomeclose">Close</div>
       <img style="width: 120px; height: 120px; object-fit: cover; border-radius: 50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFApln2A7RTaaGQx9r7Lj9yUG_g-Nt_Lel11hqQDGDuZI5fz__Y-sqArg&s=10" />
       <h1 style="color:rgb(174, 224, 235); margin: 4px;"> humanOS</h1>
       <p style="margin: 0px; font-size: 20px; color:#e7f1ec">This <abbr title="Outa Sync?">OS</abbr> is for <abbr title="Not ya, Tanaka. Stop spectating." style="text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: 3px; cursor: help;">ya.</abbr> I like cats not dogs, I like studying and I prefer ice-cream over watermelon.</p>
