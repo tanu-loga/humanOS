@@ -1,0 +1,45 @@
+.closebutton {
+    position: absolute; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 13px; 
+    cursor: pointer;
+    width: 16px; 
+    height: 16px; 
+    right: 15px; 
+    margin: 15px; 
+    border: 1px solid rgba(39, 40, 41, 0.24); 
+    background-color: rgba(190, 201, 214, 0.26); 
+    padding: 4px 20px
+}
+.window {
+    z-index: 5; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    padding: 10px; 
+    border: thick double #566d6a; 
+    width: fit-content; 
+    border-radius: 16px; 
+    backdrop-filter: blur(1px); 
+    background-color: rgba(37, 34, 34, 0.25); 
+    color: #fff;
+}
+.windowheader {
+    position: absolute; 
+    top: -60px; 
+    left: 0; 
+    width: 100%; 
+    cursor: move; 
+    display: flex; 
+    justify-content: center; 
+    margin: 8px;
+
+    display: flex; 
+    justify-content: center;
+}
+.headerimg {
+    width: 120px; 
+    height: 60px; 
+}
